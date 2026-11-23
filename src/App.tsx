@@ -16,6 +16,7 @@ import { Updates } from './pages/Updates.tsx';
 import { Users } from './pages/Users.tsx';
 import { WebSearch } from './pages/WebSearch.tsx';
 import { Skills } from './pages/Skills.tsx';
+import { Ecc } from './pages/Ecc.tsx';
 import { Website } from './pages/Website.tsx';
 import { ApiKeys } from './pages/ApiKeys.tsx';
 import { Agents } from './pages/Agents.tsx';
@@ -35,6 +36,7 @@ const PAGES = [
   { id: 'models', label: 'Models', icon: 'cube', group: 'AI' },
   { id: 'search', label: 'Web search', icon: 'search', group: 'AI' },
   { id: 'skills', label: 'Skills', icon: 'spark', group: 'AI' },
+  { id: 'ecc', label: 'Devora Library', icon: 'spark', group: 'AI' },
   { id: 'agents', label: 'Agents', icon: 'bot', group: 'AI' },
   { id: 'apikeys', label: 'API keys', icon: 'key', group: 'API' },
   { id: 'users', label: 'Users', icon: 'user', group: 'Desktop app' },
@@ -187,6 +189,7 @@ export function App() {
         {page === 'models' && <Models />}
         {page === 'search' && <WebSearch />}
         {page === 'skills' && <Skills />}
+        {page === 'ecc' && <Ecc />}
         {page === 'agents' && <Agents />}
         {page === 'announcements' && <Announcements />}
         {page === 'apikeys' && <ApiKeys />}
